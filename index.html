@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PLANK SELLER</title>
+    <script src="https://kit.fontawesome.com/2e10b73d37.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="plank.css">
+</head>
+<body>
+    <nav>
+        <div><a href="https://wa.me/2349038179293" target="_blank">HOME</a></div>
+        <div><a href="https://wa.me/2349038179293" target="_blank">ABOUT US</a></div>
+        <div><a href="tel:08032476940">CALL</a></div>
+        <div><a href="tel:08032476940">CONTACT US</a></div>
+        <div>
+            <a href="https://wa.me/2349038179293" target="_blank">WHATSAPP US</a>
+        </div>
+    </nav>
+
+    <i class="fa-brands fa-whatsapp" onclick="window.open('https://wa.me/2349038179293', '_blank')"></i>
+
+    <div class="lead1">
+        <h1>WELCOME</h1>
+        <h1>TO</h1>
+        <h1>OMO OLUPO PLANK SELLER</h1>
+    </div>
+    <div class="lead2">
+        <div><img src="./IMG-20240817-WA0001.jpg"></div>
+        <div><img src="./IMG-20240817-WA0002.jpg"></div>
+        <div><img src="./IMG-20240817-WA0003.jpg"></div>
+        <div><img src="./IMG-20240817-WA0004.jpg"></div>
+    </div>
+    <p>WE HAVE ALL WHAT YOU ARE LOOKING FOR</p>
+
+    <div class="lead3">
+        <div><img src=".//IMG-20240817-WA0005.jpg"></div>
+        <div><img src="./IMG-20240817-WA0006.jpg" alt="img"></div>
+        <div><img src=".//IMG-20240817-WA0008.jpg" alt=""></div>
+        <div><img src=".//IMG-20240817-WA0009.jpg" alt=""></div>
+    </div>
+    <p>CONTACT US TODAY AND YOU WILL ENJOY OUR BEST SERVICE</p>
+    <hr>
+
+    <div class="lead4">
+        <div><h2>
+            you can get all the plank you need from us at affordable price with quality and guarantee 
+        </h2></div>
+        <div><b>
+            we have varieties of wood like :
+        </b></div>
+        <div>
+            <ul>
+                <li>2by2</li>
+                <li>2by3</li>
+                <li>2by4</li>
+                <li>2by6</li>
+                <li>2by12</li>
+                <li>hard wood like : iroko, ara etc</li>
+                <li>soft wood like : araba, and others</li>
+                <li>you can get everything you need from us like tayrod, doors and windows frames and many others</li>
+            
+            </ul>
+            <p>JUST CONTACT US AND YOU WILL ALSO ENJOY THE QUALITY AND TRANSPARENCY OF OUR WORK AND SERVICE</p>
+        </div>
+
+    </div>
+    <div class="form">
+        <h2>MAKE YOUR REQUEST NOW</h2>
+        <form id="contactForm">
+           <div> 
+            <label for="name">NAME*</label>
+            <input type="text" id="name" name="name" required>
+        </div>
+        <div> 
+            <label for="tel">Tel*</label>
+            <input type="number" id="tel" name="tel" required>
+        </div>
+
+           <div>
+            <label for="message">message*</label>
+            <textarea id="message" name="message" required></textarea>
+           </div>
+           
+            <button type="button" onclick="submitToWhatsApp()">SEND</button>
+        </form>
+    </div>
+    
+    <nav class="lead5">
+        <div><h1>ABOUT US</h1>
+            <p>omo olupo plank seller is owned<br>and controlled by mr francis and<br>we assure you quality work because our work is guaranteed</p>
+        </div>
+        
+        <div><h1>CONTACT US</h1>
+            <p>call 08032476940</p>
+            <p>whatsapp 09038179293</p>
+        </div>
+        <div>
+            <h1>LOCATION</h1>
+            <p>omo olupo plank seller is located at oyan,<br> odo-otin local government,<br> osun state.</p>
+            
+        </div>
+
+    </nav>
+
+    <div class="lead6">
+        <h1>MR FRANCIS</h1>
+        <img src="./new pic.jpg">
+    </div>
+    
+    <script>
+        function submitToWhatsApp() {
+            var name = document.getElementById('name').value;
+            var tel = document.getElementById('tel').value;
+            var message = document.getElementById('message').value;
+
+            // Check if all fields are filled
+            if (!name || !tel || !message) {
+                alert('Please fill out all fields.');
+                return;
+            }
+
+            var url = 'https://wa.me/2349038179293?text=' 
+                + encodeURIComponent('Name: ' + name + '\nTel: ' + tel + '\nMessage: ' + message);
+
+            window.open(url, '_blank');
+        }
+    </script>
+</body>
+</html>
